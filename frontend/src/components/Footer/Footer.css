@@ -1,0 +1,54 @@
+.footer-cont{
+    height: 40vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+
+}
+
+.footer-left{
+    width: 30vw;
+}
+
+.footer-left img{
+    width: 150px;
+}
+
+.footer-left p{
+    font-size: 18px;
+    width: 25vw;
+}
+
+.footer-right{
+    width: 30vw;
+        display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.footer-right ul{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.footer-right ul li{
+    font-size: 18px;
+    display: flex;
+}
+
+
+.footer-right ul li img{
+    width: 18px;
+    margin-right:4px;
+}
+
+.rights{
+    background-color: black;
+    color: white;
+    text-align: center;
+}

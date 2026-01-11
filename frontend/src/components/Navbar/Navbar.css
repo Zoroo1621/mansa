@@ -1,0 +1,60 @@
+.navbar{
+    height: 120px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 5vw;
+    background-color: white;
+}
+
+.logo img{
+    cursor: pointer;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap: 52px;
+}
+
+.nav-menu ul li{
+    list-style: none;
+    font-size: 18px;
+    color: #134566;
+    font-weight: 500;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    position: relative;
+}
+
+.nav-menu ul li::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    transition: .3s ease-in;
+}
+
+.nav-menu ul li:hover::before{
+    background-color: #134566;
+    width: 100%;
+ }
+ 
+.contact-btn button{
+    padding: 12px 0px;
+    width: 140px;
+    background-color: #134566;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: lighter;
+    color: white;
+    border: none;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.contact-btn button:hover{
+    background-color: black;
+}
+

@@ -1,0 +1,96 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.container .left{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.container .left::after{
+    content: '';
+    background-color: #123456;
+    position: absolute;
+    height: 400px;
+    width: 3px;
+    right: 0;
+}
+
+.phone-mail{
+    width:100% ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    margin: 4px;
+}
+.right{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.inpt{
+    padding: 8px 6px;
+    width: 500px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 12px;
+}
+
+.dnt{
+    margin: 4px 0;
+}
+
+.dnt input{
+    margin-right: 5px;
+    border: none;
+    padding: 6px 12px;
+}
+.container .right button{
+    border: none;
+    background-color: #123456;
+    color: white;
+    padding: 8px 0;
+    cursor: pointer;
+    width: 150px;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: .3s ease;
+}
+
+.container .right button:hover{
+    background-color: black;
+}
+
+.status-message {
+    padding: 10px 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.status-message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.status-message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
